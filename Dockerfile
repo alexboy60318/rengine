@@ -32,10 +32,10 @@ RUN go get -u github.com/tomnomnom/assetfinder github.com/hakluke/hakrawler
 
 RUN GO111MODULE=on go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 
-RUN GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder \
-    github.com/projectdiscovery/nuclei/v2/cmd/nuclei \
+RUN GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder \
+    github.com/projectdiscovery/nuclei \
     github.com/lc/gau \
-    github.com/projectdiscovery/naabu/cmd/naabu
+    github.com/projectdiscovery/naabu
 
 # Copy requirements
 COPY ./requirements.txt /tmp/requirements.txt
